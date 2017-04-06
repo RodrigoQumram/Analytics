@@ -1,0 +1,6 @@
+wu <- read.csv2("mobiliar.webViews-waId-URL.csv")
+fe <- read.csv2("mobiliar.trackingBySessions-Forms.csv")
+fe$date <- as.Date(fe$dt)
+fe$time <- as.numeric(fe$time)
+fe$duration <- as.numeric(fe$duration)
+# save(fe,wu,file="QData")
